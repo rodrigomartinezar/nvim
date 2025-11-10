@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/Users/rodrigomartinez/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
   },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/Users/rodrigomartinez/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/rodrigomartinez/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
