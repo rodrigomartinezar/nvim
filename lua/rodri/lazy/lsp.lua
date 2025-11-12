@@ -15,6 +15,8 @@ return {
                     "ts_ls",
                 },
             })
+            --vim.keymap.set("n", "<leader>rr", vim.lsp.buf.references())
+            vim.diagnostic.config({virtual_text = true})
         end,
     }
 }
