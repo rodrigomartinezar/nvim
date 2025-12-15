@@ -21,6 +21,7 @@ return {
                     "lua_ls",
                     "ts_ls",
                     "eslint",
+                    "gopls",
                 },
             })
             local cmp = require("cmp")
@@ -68,6 +69,11 @@ return {
                     vim.keymap.set("n", "<leader>d", vim.lsp.buf.definition)
                     vim.keymap.set("n", "<leader>i", vim.lsp.buf.implementation)
                 end
+            })
+            vim.api.nvim_create_autocmd("BufWritePost", {
+              callback = function ()
+                vim.lsp.buf.format({ async = true }) 
+              end
             })
         end,
     }

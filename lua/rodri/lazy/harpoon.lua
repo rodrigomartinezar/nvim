@@ -1,5 +1,5 @@
 return {
-    {  
-        'ThePrimeagen/harpoon' 
+    {
+        'ThePrimeagen/harpoon'
     }
 }
