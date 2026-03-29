@@ -1,2 +1,5 @@
 local gitsigns = require("gitsigns")
 vim.keymap.set("n", "<leader>cc", gitsigns.preview_hunk)
+vim.keymap.set("n", "<leader>u", gitsigns.reset_hunk)
+vim.keymap.set("n", "<leader>n", gitsigns.next_hunk)
+vim.keymap.set("n", "<leader>N", gitsigns.prev_hunk)
